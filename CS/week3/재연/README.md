@@ -1,16 +1,16 @@
 <strong>목차</strong>
 
-[1. OS 개요](OS-개요)
+[1. OS 개요](#OS-개요)
 
-[2. 프로세스와 스레드](프로세스와-스레드)
+[2. 프로세스와 스레드](#프로세스와-스레드)
 
-[3. 인터럽트(Interrupt)](인터럽트(Interrupt))
+[3. 인터럽트](#인터럽트)
 
-[4. 시스템 콜(System Call)](시스템-콜(System-Call))
+[4. 시스템 콜](#시스템-콜)
 
-[5. PCB(Process Control Block)와 Context Switching](PCB(Process-Control-Block)와-Context-Switching)
+[5. PCB와 Context Switching](#PCB와-Context-Switching)
 
-[6. IPC(Inter Process Communication)](IPC(Inter-Process-Communication))
+[6. IPC](#IPC)
 
 
 
@@ -67,7 +67,9 @@
 - 기본적으로 프로세스당 최소 1개의 스레드를 가진다.
 - 프로세스간 통신을 하기 위해서는 IPC를 사용해야 한다.
 
-![process](https://user-images.githubusercontent.com/59406960/113096798-d84de080-9230-11eb-8b7b-40fb3133ceb0.png)
+<img src="https://user-images.githubusercontent.com/59406960/113096798-d84de080-9230-11eb-8b7b-40fb3133ceb0.png" width="75%" height="75%">
+
+
 
 
 
@@ -80,7 +82,9 @@
 - 스레드는 프로세스 내에서 Stack 영역만을 할당 받고, Code, Data, Heap 영역은 공유한다.
 - 한 스레드가 프로세스 자원을 변경하면 같은 프로세스 내의 다른 스레드도 변경 결과를 즉시 볼 수 있다.
 
-![thread](https://user-images.githubusercontent.com/59406960/113097540-097ae080-9232-11eb-896a-899d56045373.png)
+<img src="https://user-images.githubusercontent.com/59406960/113097540-097ae080-9232-11eb-896a-899d56045373.png" width="75%" height="75%">
+
+
 
 
 
@@ -110,9 +114,9 @@
 
 
 
-## 인터럽트(Interrupt)
+## 인터럽트
 
-인터럽트란 프로그램을 실행하는 도중에 예기치 않은 상황이 발생할 경우 현재 실행 중인 작업을 즉시 중단하고, 발생된 상황을 우선 처리한 후 실행 중이던 작업으로 복귀하는 것을 의미한다.
+인터럽트(Interrupt)란 프로그램을 실행하는 도중에 예기치 않은 상황이 발생할 경우 현재 실행 중인 작업을 즉시 중단하고, 발생된 상황을 우선 처리한 후 실행 중이던 작업으로 복귀하는 것을 의미한다.
 
 
 
@@ -133,9 +137,9 @@
 
 
 
-## 시스템 콜(System Call)
+## 시스템 콜
 
-시스템 콜은 커널 모드의 기능을 사용자 모드에서 사용할 수 있도록 해주는 기능이다.
+시스템 콜(System Call)은 커널 모드의 기능을 사용자 모드에서 사용할 수 있도록 해주는 기능이다.
 
 즉, 프로세스가 하드웨어에 직접 접근해서 필요한 기능을 사용할 수 있게 해주는 것이다.
 
@@ -153,9 +157,9 @@
 
 
 
-## PCB(Process Control Block)와 Context Switching
+## PCB와 Context Switching
 
-PCB란 운영체제가 프로세스를 제어하기 위해 정보를 저장해 놓는 곳으로, 프로세스의 상태 정보를 저장한다.
+PCB(Process Control Block)란 운영체제가 프로세스를 제어하기 위해 정보를 저장해 놓는 곳으로, 프로세스의 상태 정보를 저장한다.
 
 프로세스 상태 관리와 Context Switching을 위해 필요하다.
 
@@ -196,9 +200,9 @@ Context Switching이란 CPU가 이전 프로세스의 상태를 PCB에 저장하
 
 
 
-## IPC(Inter Process Communication)
+## IPC
 
-IPC란 프로세스 간의 통신을 의미한다.
+IPC(Inter Process Communication)란 프로세스 간의 통신을 의미한다.
 
 프로세스는 메모리 영역을 독립적으로 할당을 받기 때문에 프로세스 간 통신을 하기 위해서는 IPC를 사용하여 통신해야 한다.
 
