@@ -19,7 +19,7 @@
 - 프로세스 구성
     - Code : 코드 자체를 구성하는 메모리 영역(프로그램 명령)
     - Data : 전역변수, 정적변수, 배열 등(초기화된 데이터)
-    - Heap : 동적 할당 시 사용 (new(), mallock() 등)
+    - Heap : 동적 할당 시 사용 (new(), malloc() 등)
     - Stack : 지역변수, 매개변수, 리턴 값 (임시 메모리 영역)
 
     ![https://user-images.githubusercontent.com/47655983/111906978-a7ceaf80-8a96-11eb-8a85-9306f98e8517.png](https://user-images.githubusercontent.com/47655983/111906978-a7ceaf80-8a96-11eb-8a85-9306f98e8517.png)
